@@ -60,7 +60,7 @@ class IGDBService:
         platform_filter = f" & platforms = ({platform_igdb_id})" if platform_igdb_id else ""
         query = (
             f'search "{name}";'
-            f" fields id,name,cover.image_id,summary,total_rating;'
+            f" fields id,name,cover.image_id,summary,total_rating;"
             f" where category = 0{platform_filter};"
             f" limit 10;"
         )
