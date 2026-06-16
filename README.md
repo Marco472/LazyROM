@@ -22,7 +22,17 @@ A self-hosted, web-based ROM library manager with an integrated metadata scraper
 
 ## Quick Start
 
-### Docker (recommended)
+### One-command install (recommended)
+
+```bash
+git clone https://github.com/Marco472/LazyROM.git
+cd LazyROM
+./install.sh
+```
+
+This creates `.env`, prompts for your IGDB credentials (optional, can be added later), creates the `roms/` and `data/` directories, and starts the stack with Docker Compose.
+
+### Docker (manual)
 
 ```bash
 git clone https://github.com/Marco472/LazyROM.git
